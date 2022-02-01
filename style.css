@@ -20,7 +20,7 @@ html {
 	width: 1000px;
 	height: 600px;
 	/*background: #ffab19;*/	
-	margin: 100px 750px;
+	margin: 10% 75%;
 	/*border: solid 2px #ff3819;*/
 }
 
@@ -31,7 +31,9 @@ h1{
 	color: #000000;
 }	
 
-form{
+/*form{
 	text-align:right;
 	font-size: 15pt;
-}	
+}	*/
+
+/*audio {display:none;}*/
