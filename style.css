@@ -3,10 +3,19 @@ text-align: center-left;
 font-size: 150%;
 font-style: italic;
 font-weight: bolder;
-background-image: url("nature.jpg");
-background-repeat: no-repeat center center fixed;
-background-size: 100% 100%;
+/*background-image: url("nature.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;*/
 }
+
+html { 
+  background: url("nature.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #main{
 	width: 1000px;
 	height: 600px;
