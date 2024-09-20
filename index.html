@@ -1,51 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<title> Asmita's Den </title>
-<link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmita's Den</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<h1 style="text-align:center">
-Welcome to Asmita's Den
-</h1>
-
 <body>
-<div id="main">
-I am a passionate nature enthusiast, fascinated by all living creatures on Earth. 
-I’m determined to promote love for animals worldwide and dream of establishing an animal foundation
-that offers top-notch treatment to sick and elderly stray animals at no cost. If you share similar aspirations 
-for animal welfare, I would be thrilled to connect with you. I firmly believe that the first lesson
-a child should learn is to cherish Mother Nature and cultivate a harmonious bond with animals.
-Aside from my passion for animals, I take immense pleasure in the beauty of music and the serenity of the mountains.
-Currently, I work as a data scientist in the fintech space.
-</div>
-<p>The music is running in the background.</p>
-<p>(Song: What a Wonderful World by Louis Armstrong)</p>
-    <audio  controls loop autoplay height="" width="">
-      <source src="What A Wonderful World.mp3" type="audio/mp3" />
+    <h1 style="text-align:center">Welcome to Asmita's Den</h1>
+
+    <div id="main">
+        <p>
+            I am a passionate nature enthusiast, fascinated by all living creatures on Earth. I’m determined to promote love for animals worldwide and dream of establishing an animal foundation that offers top-notch treatment to sick and elderly stray animals at no cost. If you share similar aspirations for animal welfare, I would be thrilled to connect with you. I firmly believe that the first lesson a child should learn is to cherish Mother Nature and cultivate a harmonious bond with animals.
+        </p>
+        <p>
+            Aside from my passion for animals, I take immense pleasure in the beauty of music and the serenity of the mountains. Currently, I work as a data scientist in the fintech space.
+        </p>
+    </div>
+
+    <p>The music is running in the background.</p>
+    <p>(Song: What a Wonderful World by Louis Armstrong)</p>
+    <audio controls loop autoplay>
+        <source src="What A Wonderful World.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
     </audio>
+
+    <div id="after_submit"></div>
+
+    <form id="contact_form" action="https://formspree.io/f/mzboegpb" method="POST">
+        <div class="row">
+            <label class="required" for="name">Your name:</label><br>
+            <input id="name" class="input" name="name" type="text" size="30" required>
+            <span id="name_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+            <label class="required" for="email">Your email:</label><br>
+            <input id="email" class="input" name="email" type="email" size="30" required>
+            <span id="email_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+            <label class="required" for="message">Your message:</label><br>
+            <textarea id="message" class="input" name="message" rows="7" cols="30" required></textarea>
+            <span id="message_validation" class="error_message"></span>
+        </div>
+
+        <input id="submit_button" type="submit" value="Send email">
+    </form>
 </body>
-<div id="after_submit"></div>
-<form id="contact_form"   action="https://formspree.io/f/mzboegpb"  method="POST">
-  <div class="row">
-    <label class="required" for="name">Your name:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email">Your email:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="message">Your message:</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    <span id="message_validation" class="error_message"></span>
-  </div>
-    
-    <input id="submit_button" type="submit" value="Send email" />
-</form>
-
-
 
 </html>
