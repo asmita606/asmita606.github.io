@@ -14,7 +14,7 @@ html {
 }
 
 #main {
-    width: 80%; /* Adjust width for responsiveness */
+    width: 80%; /* Responsive width */
     max-width: 1000px; /* Maximum width */
     margin: 10% auto; /* Center the div */
     padding: 20px; /* Add padding */
@@ -24,11 +24,13 @@ html {
 }
 
 h1 {
-    text-align: center;
     font-family: "Times New Roman", serif; /* Ensure serif fallback */
-    font-size: 30pt;
-    color: #000000;
+    font-size: 3em; /* Increase font size for visibility */
+    color: #000000; /* Header color */
     margin-bottom: 20px; /* Space below the header */
+    padding: 10px; /* Add some padding */
+    background: rgba(255, 255, 255, 0.9); /* Background for the header for contrast */
+    border-radius: 10px; /* Rounded corners */
 }
 
 form {
