@@ -31,6 +31,10 @@ h1{
 	color: #000000;
 }	
 
+.music-info {
+    margin: 10px 0; /* Adjusted margin for spacing */
+}
+
 /*form{
 	text-align:right;
 	font-size: 15pt;
