@@ -83,18 +83,23 @@
             Aside from my passion for animals, I take immense pleasure in the beauty of music and the serenity of the mountains. Currently, I work as a data scientist in the fintech space.
         </p>
     </div>
-
+    
     <div class="music-info" style="margin: 5px 0;">
         <p>The music is running in the background.</p>
         <p>(Song: What a Wonderful World by Louis Armstrong)</p>
     </div>
     
-    <audio id="background-music" controls loop>
+    <audio id="background-music" loop autoplay>
         <source src="What A Wonderful World.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-
-    <button id="play-button">Play Music</button>
+    
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("background-music");
+            audio.play();
+        };
+    </script>
 
     <form id="contact_form" action="https://formspree.io/f/mzboegpb" method="POST">
         <div class="row">
