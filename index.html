@@ -85,11 +85,11 @@
     </div>
     
     <div class="music-info" style="margin: 5px 0;">
-        <p>The music is running in the background.</p>
-        <p>(Song: What a Wonderful World by Louis Armstrong)</p>
+    <p>The music is running in the background.</p>
+    <p>(Song: What a Wonderful World by Louis Armstrong)</p>
     </div>
     
-    <audio id="background-music" loop autoplay>
+    <audio id="background-music" loop>
         <source src="What A Wonderful World.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
@@ -97,7 +97,9 @@
     <script>
         window.onload = function() {
             var audio = document.getElementById("background-music");
-            audio.play();
+            audio.play().catch(function(error) {
+                console.log("Error playing audio:", error);
+            });
         };
     </script>
 
